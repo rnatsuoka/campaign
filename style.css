@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+  font-family: "Kiwi Maru", "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  background: url(images/bg_cover01.png) left top fixed;
+  background-size: cover;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+.container-camp {
+  max-width: 960px;
+}
+
+/* フェードイン */
+.fadein {
+    opacity: 0;
+    transform: translate(0,30px);
+    transition: all 0.8s;
+  &.scrollin{
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
+}
